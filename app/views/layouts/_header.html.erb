@@ -1,9 +1,10 @@
 <header>
-	<%= image_tag("http://placehold.it/250x100&text=$wit3r", :alt => "Switer", :class => "round") %>
+	<% logo = image_tag("http://placehold.it/250x100&text=$wit3r", :alt => "Switer", :class => "round") %>
+	<%= link_to logo, root_path %>
 	<nav class="round">
 		<ul>
-			<li><%= link_to "Home", '#' %></li>
-			<li><%= link_to "Help", '#' %></li>
+			<li><%= link_to "Home", root_path %></li>
+			<li><%= link_to "Help", help_path %></li>
 			<li><%= link_to "Sign in", '#' %></li>
 		</ul>
 	</nav>
